@@ -1,0 +1,129 @@
+/* General Body Styles */
+body {
+  background: linear-gradient(to top, #1d2b64 , #f8a3d0); /* Blue to Green Gradient */
+  font-family: 'Times New Roman', serif;
+  color: #fbf2f2;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Fancy Header Font (using Google Fonts) */
+h2 {
+  font-family: 'Adobe Garamond', serif;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #09090a;
+  background: linear-gradient(to right, #ff6a8f, #e6a5db); /* Gradient text */
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* Container for the document editor */
+.editor-container {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1); /* Slight opacity for cool effect */
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Toolbar styles */
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #312727; /* Dark color for contrast */
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.toolbar button {
+  background-color: #9B80B1; /* Slightly contrasting button color */
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.toolbar button:hover {
+  background-color: #15b74e; /* Lighter hover color */
+}
+
+/* Textarea Styles */
+textarea.editor-textarea {
+  width: 100%;
+  height: 400px;
+  font-size: 16px;
+  font-family: 'Times New Roman', serif;
+  padding: 15px;
+  background: #fafafa;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: none;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease; /* Smooth border transition */
+}
+
+/* Remove blue outline when the textarea is focused */
+textarea.editor-textarea:focus {
+  outline: none;
+  border-color: #ccc; /* Neutral focus border */
+  background: #fafafa; /* Keep background white */
+}
+
+/* Textarea hover effect */
+textarea.editor-textarea:hover {
+  background: rgb(246, 245, 245); /* Light hover effect */
+}
+
+/* Loading spinner styles */
+.loading-spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite; /* Spin animation */
+}
+
+/* Spin animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .editor-container {
+    padding: 10px;
+  }
+
+  textarea.editor-textarea {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .toolbar button {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}
