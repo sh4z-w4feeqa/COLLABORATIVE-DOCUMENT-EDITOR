@@ -62,15 +62,15 @@ CSS3 is used to style the interface, creating a visually appealing and user-frie
 
 **Challenges Faced:** 
 
-- Real-Time Synchronization: Allowing multiple users to edit the same document simultaneously without conflicts.
+- _Real-Time Synchronization:_ Allowing multiple users to edit the same document simultaneously without conflicts.
 
-- Cursor Position Tracking: Keeping track of each user’s cursor while preventing jumps or glitches during updates.
+- _Cursor Position Tracking:_ Keeping track of each user’s cursor while preventing jumps or glitches during updates.
 
-- Debouncing Updates: Reducing network overhead while keeping changes responsive required careful debounce logic.
+- _Debouncing Updates:_ Reducing network overhead while keeping changes responsive required careful debounce logic.
 
-- State Management: Ensuring React state stayed consistent across incoming edits, cursor movements, and local typing.
+- _State Management:_ Ensuring React state stayed consistent across incoming edits, cursor movements, and local typing.
 
-- UI/UX: Designing an interface that clearly shows other users’ activity while remaining user-friendly.
+- _UI/UX:_ Designing an interface that clearly shows other users’ activity while remaining user-friendly.
 
 **Conclusion**
 
