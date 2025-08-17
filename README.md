@@ -60,6 +60,18 @@ CSS3 is used to style the interface, creating a visually appealing and user-frie
 
 * Learning Resource: Developers can study the integration of React with real-time communication frameworks like Socket.IO to build collaborative applications.
 
+**Challenges Faced:** 
+
+- Real-Time Synchronization: Allowing multiple users to edit the same document simultaneously without conflicts.
+
+- Cursor Position Tracking: Keeping track of each user’s cursor while preventing jumps or glitches during updates.
+
+- Debouncing Updates: Reducing network overhead while keeping changes responsive required careful debounce logic.
+
+- State Management: Ensuring React state stayed consistent across incoming edits, cursor movements, and local typing.
+
+- UI/UX: Designing an interface that clearly shows other users’ activity while remaining user-friendly.
+
 **Conclusion**
 
 The Real-Time Collaborative Document Editor demonstrates advanced use of React, Socket.IO, JavaScript, and CSS to create a responsive, interactive, and collaborative web application. By enabling live document editing with real-time updates, cursor tracking, and intuitive user interface design, the project combines technical proficiency with practical utility. It serves as both a learning tool for modern web development and a functional platform for enhancing collaboration, making it a valuable example of interactive, real-time application design.
